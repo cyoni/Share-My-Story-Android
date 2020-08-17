@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_contact_us">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp">
+
+            <TextView
+                android:id="@+id/kicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Do you have comments or questions? Please let us know. " />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kicker"
+                android:layout_marginTop="34dp"
+                android:text="Name:"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"
+                android:layout_marginTop="35dp"
+                android:layout_below="@+id/kicker"
+                android:layout_toRightOf="@id/text4"
+                android:padding="5dp"
+                android:background="@drawable/rounded_shape"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_marginTop="34dp"
+                android:text="Email:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_shape"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="66dp"
+                android:layout_marginTop="35dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/text4"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                />
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_email"
+                android:layout_marginTop="34dp"
+                android:text="Message:"
+                android:textSize="20sp" />
+
+
+            <!-- Multiline input -->
+
+            android:lines="8" <!-- Total Lines prior display -->
+            android:minLines="6" <!-- Minimum lines -->
+            android:gravity="top|left" <!-- Cursor Position -->
+            android:maxLines="10" <!-- Maximum Lines -->
+            android:layout_height="wrap_content" <!-- Height determined by content -->
+            android:layout_width="match_parent" <!-- Fill entire width -->
+            android:scrollbars="vertical" <!-- Vertical Scroll Bar -->
+            />
+
+            <EditText
+                android:id="@+id/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:layout_below="@id/txt_msg"
+                android:background="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:gravity="start"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="textMultiLine|textCapSentences" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_content"
+                android:layout_alignParentRight="true"
+                style="?attr/materialButtonOutlinedStyle"
+                android:text="Send"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/grp1">
+    <item
+        android:id="@+id/my_profile"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black"
+        android:title="@string/my_profile"
+        app:showAsAction="never" />
+
+    </group>
+
+    <group android:id="@+id/grp2">
+
+    <item
+        android:id="@+id/contact"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black"
+        android:title="Contact us"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/login_logout"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu_black"
+        android:title="Log in/Sign out"
+        app:showAsAction="never" />
+    </group>
+
+</menu>

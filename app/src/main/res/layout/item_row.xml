@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="3dp"
+            android:src="@drawable/profile_blank"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="User 1010"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/profile_image" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:layout_alignRight="@id/content" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/menu_button"
+            android:layout_marginRight="5dp"
+            android:text="10m" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/profile_image"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5sp"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:layout_alignParentStart="true" />
+
+
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_below="@id/content"
+            layout="@layout/post_buttons"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

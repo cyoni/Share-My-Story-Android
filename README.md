@@ -2,6 +2,7 @@
 
 This Android app lets users to interact with each other and also lets them to share their stories publicly or privately.
 
+You can try the app here: https://play.google.com/store/apps/details?id=my_app.example.my_adventures
 <br>
 Log in to the app:
 <br>

@@ -1,4 +1,4 @@
-# SharedAdventures
+# Share My Story - Android App
 
 This Android app lets users to interact with each other and also lets them to share their stories publicly or privately.
 
